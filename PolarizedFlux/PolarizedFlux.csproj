@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="**/*.js" />
+        <None Remove="**/*.d.ts" />
+        <None Remove="**/*.js.map" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="IAction.ts" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Test\" />
+      <Folder Include="Source\" />
+    </ItemGroup>
+
+    <Target Name="BuildTsc" AfterTargets="BeforeBuild">
+        <Exec Command="tsc -p Source" />
+        <Exec Command="tsc -p Test" />
+    </Target>
+
+</Project>

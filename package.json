@@ -1,0 +1,29 @@
+{
+  "name": "polarized-flux",
+  "version": "1.0.0",
+  "description": "Framework to write flux apps with rxjs stores.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Useurmind/PolarizedFlux.git"
+  },
+  "keywords": [
+    "flux",
+    "rxjs",
+    "store",
+    "react"
+  ],
+  "author": "Jochen Grün",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Useurmind/PolarizedFlux/issues"
+  },
+  "homepage": "https://github.com/Useurmind/PolarizedFlux#readme",
+  "dependencies": {
+    "rxjs": "^5.5.6",
+    "tslib": "^1.9.0"
+  }
+}
